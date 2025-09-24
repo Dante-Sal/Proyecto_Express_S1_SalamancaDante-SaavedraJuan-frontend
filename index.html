@@ -4,10 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link href="./style/style.css" rel="stylesheet"/> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>KarenFlix - Start Up </title>
 </head>
 
 <body>
-</body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./storage/video/2021 Best Trailers  Epic Trailer Music Mix - The Wizard (720p, h264).mp4" type="video/mp4">
+        </video> 
+    </div>
 
+    <div class="overlay"></div>
+    
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-lg-7 col-md-6">
+                <div class="left-section">
+                    <div class="brand-logo">
+                        <img src="./storage/img/processed_image 1.png" alt="KARENFLIX" onerror="this.style.display='none'">
+                        
+                        <div style="color: white; font-size: 5rem; font-weight: 900; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); letter-spacing: -2px; line-height: 0.9; display: none;" class="fallback-text">KARENFLIX</div>
+                    </div>
+                    
+                    <div class="subtitle">Your World of <span class="highlight">Movies</span></div>
+                    <div class="subtitle-line2">& <span class="highlight">Series</span></div>
+                    <div class="subtitle-line3">in Just <span class="highlight">ONE</span> Click!</div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="right-section">
+                    <div class="login-card">
+                        <div class="logo-container">
+                            <div class="kf-logo">
+                                <img src="./storage/img/7d42d326-9d68-4238-b356-0335caef8b57.png" alt="KF" onerror="this.parentElement.innerHTML='<div style=\'width:80px;height:80px;background:rgba(168,85,247,0.2);border:2px solid rgba(168,85,247,0.3);border-radius:15px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px);margin:0 auto 1.5rem;color:white;font-size:2rem;font-weight:900;text-shadow:2px 2px 4px rgba(0,0,0,0.5)\'>KF</div>'">
+                            </div>
+                            
+                            <div class="welcome-text">Welcome!</div>
+                            <div class="new-user-text">New to KarenFlix...?</div>
+                        </div>
+                        
+                        <div class="form-container">
+                            <div class="btn-register-container" onclick="handleRegisterClick()">
+                                <img src="register-button.png" alt="Register NOW!" onerror="this.parentElement.innerHTML='<button class=\'btn-fallback\'>Register NOW!</button>'">
+                            </div>
+                            
+                            <div class="or-divider">or</div>
+                            
+                            <div class="btn-signin-container" onclick="handleSignInClick()">
+                                <img src="signin-button.png" alt="Sign in" onerror="this.parentElement.innerHTML='<button class=\'btn-fallback signin\'>Sign in</button>'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./scripts/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </html>
