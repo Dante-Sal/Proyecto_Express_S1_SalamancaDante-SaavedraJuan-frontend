@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -6,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: "Inter", sans-serif;
@@ -16,7 +14,6 @@ body {
     height: 100vh;
     overflow: hidden;
     position: relative;
-
 }
 
 /* Video background container */
@@ -64,9 +61,10 @@ body {
 
 /* KARENFLIX logo image container */
 .brand-logo {
-    margin-bottom: 2rem;
-    max-width: 600px;
+    margin-bottom: 3rem;
+    max-width: 800px;
     width: 100%;
+    
 }
 
 .brand-logo img {
@@ -76,32 +74,24 @@ body {
 }
 
 .subtitle {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
-    margin-left: 2.5rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .subtitle-line2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
-    margin-left: 9rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .subtitle-line3 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1.2;
-    margin-left: 4rem;
+    line-height: 1.1;
 }
 
 .highlight {
@@ -120,22 +110,22 @@ body {
     background: rgba(255, 255, 255, 0.192);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 3rem;
-    width: 400px;
+    border-radius: 25px;
+    padding: 4rem;
+    width: 500px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
 }
 
 .logo-container {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 /* KF logo image container */
 .kf-logo {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1.5rem;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 2rem;
     display: block;
 }
 
@@ -147,16 +137,17 @@ body {
 
 .welcome-text {
     color: #AA76FF;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
     text-align: center;
     font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 .new-user-text {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
@@ -212,8 +203,8 @@ body {
     background: #AA76FF;
     border: none;
     color: white;
-    padding: 15px;
-    font-size: 1.1rem;
+    padding: 18px;
+    font-size: 1.3rem;
     font-weight: 600;
     border-radius: 50px;
     width: 100%;
@@ -226,40 +217,188 @@ body {
     background: transparent;
     color: #a855f7;
     backdrop-filter: blur(10px);
-    background: #ffffff
+    background: #ffffff;
 }
 
 .btn-fallback:hover {
     transform: translateY(-2px);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+/* Responsive design mejorado */
+
+/* Tablets grandes y pantallas medianas */
+@media (max-width: 1200px) {
     .left-section {
-        padding: 2rem;
-        text-align: center;
+        padding: 0 3rem;
     }
     
     .brand-logo {
-        max-width: 400px;
+        max-width: 700px;
+    }
+    
+    .subtitle {
+        font-size: 3rem;
+        margin-left: 3rem;
+    }
+    
+    .subtitle-line2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+    }
+    
+    .subtitle-line3 {
+        font-size: 3rem;
+        margin-left: 4rem;
+    }
+    
+    .login-card {
+        width: 450px;
+        padding: 3.5rem;
+    }
+    
+    .welcome-text {
+        font-size: 2.2rem;
+    }
+    
+    .kf-logo {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .left-section {
+        padding: 0 2rem;
+    }
+    
+    .brand-logo {
+        max-width: 600px;
     }
     
     .subtitle,
     .subtitle-line2,
     .subtitle-line3 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        margin-left: 2rem;
+    }
+    
+    .subtitle-line2 {
+        margin-left: 8rem;
+    }
+    
+    .subtitle-line3 {
+        margin-left: 3rem;
+    }
+    
+    .login-card {
+        width: 400px;
+        padding: 3rem;
+    }
+    
+    .welcome-text {
+        font-size: 2rem;
+    }
+    
+    .kf-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Tablets pequeños */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        height: auto;
+    }
+    
+    .container-fluid {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .left-section {
+        padding: 3rem 2rem 2rem 2rem;
+        text-align: center;
+        align-items: center;
+        height: auto;
+        min-height: 60vh;
+    }
+    
+    .right-section {
+        height: auto;
+        min-height: 40vh;
+        padding: 2rem;
+    }
+    
+    .brand-logo {
+        max-width: 400px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .subtitle,
+    .subtitle-line2,
+    .subtitle-line3 {
+        font-size: 1.8rem;
+        margin-left: 0 !important;
+        text-align: center;
     }
     
     .login-card {
         margin: 1rem;
         padding: 2rem;
         width: auto;
+        max-width: 400px;
     }
 }
 
+/* Móviles */
 @media (max-width: 576px) {
+    .left-section {
+        padding: 2rem 1rem 1.5rem 1rem;
+        min-height: 50vh;
+    }
+    
+    .right-section {
+        padding: 1.5rem 1rem 2rem 1rem;
+        min-height: 50vh;
+    }
+    
     .brand-logo {
         max-width: 300px;
+        margin-bottom: 1rem;
+    }
+    
+    .subtitle,
+    .subtitle-line2,
+    .subtitle-line3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .login-card {
+        padding: 1.5rem;
+        margin: 1rem 0.5rem;
+    }
+    
+    .welcome-text {
+        font-size: 1.7rem;
+    }
+    
+    .kf-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 400px) {
+    .brand-logo {
+        max-width: 250px;
     }
     
     .subtitle,
@@ -269,6 +408,52 @@ body {
     }
     
     .login-card {
-        padding: 1.5rem;
+        padding: 1.2rem;
+        margin: 1rem 0.3rem;
+    }
+    
+    .welcome-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Para móviles en orientación horizontal */
+@media (max-height: 500px) and (orientation: landscape) {
+    .container-fluid {
+        height: auto;
+    }
+    
+    .left-section,
+    .right-section {
+        height: auto;
+        min-height: auto;
+        padding: 1rem;
+    }
+    
+    .brand-logo {
+        max-width: 200px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .subtitle,
+    .subtitle-line2,
+    .subtitle-line3 {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .login-card {
+        padding: 1rem;
+        max-width: 300px;
+    }
+    
+    .welcome-text {
+        font-size: 1.3rem;
+    }
+    
+    .kf-logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
     }
 }
