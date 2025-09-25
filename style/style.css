@@ -224,6 +224,17 @@ body {
     transform: translateY(-2px);
 }
 
+.text1{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text2{
+    text-decoration: none;
+    color: #AA76FF;
+}
+
+
 /* Responsive design mejorado */
 
 /* Tablets grandes y pantallas medianas */

@@ -413,6 +413,12 @@
             display: none;
         }
 
+
+        .text1{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
         /* Responsive design */
         @media (max-width: 1200px) {
             .left-section {

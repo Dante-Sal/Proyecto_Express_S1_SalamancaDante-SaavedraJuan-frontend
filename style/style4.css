@@ -8,7 +8,7 @@
 
         body {
             font-family: "Inter", sans-serif;
-            background: #0f0f23;
+            background: #000000;
             color: white;
             overflow-x: hidden;
         }
@@ -20,6 +20,7 @@
             top: 0;
             width: 60px;
             height: 100vh;
+            margin-right: 0;
             background: rgba(170, 118, 255, 0.15);
             backdrop-filter: blur(20px);
             border-right: 1px solid rgba(170, 118, 255, 0.2);
@@ -56,11 +57,11 @@
             border-left-color: #AA76FF;
         }
 
-        .sidebar-icon {
+        .sidebar-icon1 {
             width: 24px;
             height: 24px;
             min-width: 24px;
-            background: rgba(255, 255, 255, 0.3);
+            background-image: url(../storage/img/image\ 7.png);
             border-radius: 4px;
             margin-right: 1rem;
             display: flex;
@@ -75,7 +76,7 @@
             width: 24px;
             height: 24px;
             min-width: 24px;
-            background: rgba(255, 255, 255, 0.3);
+            background-image: url(../storage/img/image\ 40.png);
             border-radius: 4px;
             margin-right: 1rem;
             display: flex;
@@ -85,6 +86,278 @@
             background-size: cover;
             background-position: center;
         }
+
+        .sidebar-icon3 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/animacion.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon4 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/comedy.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon5 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/drama.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon6 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/horror.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon7 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+                        background-image:url(../storage/img/Sci-fi.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon8 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+                        background-image:url(../storage/img/thriller.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .sidebar-icon9 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/romance.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon10 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/fantasy.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .sidebar-icon12 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/documentary.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon13 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/crime.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon14 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/family.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon15 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/little_mystery.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon16 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/war.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon17 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/west.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon18 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/music.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon19 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image:url(../storage/img/history.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon20 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+                        background-image:url(../storage/img/comedy.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sidebar-icon21 {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+                        background-image:url(../storage/img/comedy.png);
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            background-size: cover;
+            background-position: center;
+        }
+
 
         .sidebar-label {
             white-space: nowrap;
@@ -102,16 +375,18 @@
 
         /* Main Content */
         .main-content {
-            margin-left: 80px;
+            margin-left: 60px;
             min-height: 100vh;
             padding: 0;
         }
 
         /* Header */
         .header {
+            
             padding-top: 16px;
             top: 0;
-            position: relative;
+            position: absolute;
+            z-index: 100;
         }
 
         .header-content {
@@ -231,18 +506,30 @@
             background: #0f0f23;
             opacity: 0.1;
         }
+        
+        .degradado {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient( #000000, #00000000, #000000);
+        }
 
         .hero-content {
+            background-position-x: 50%;
             position: relative;
             z-index: 2;
             height: 100%;
             display: flex;
-            align-items: center;
-            padding: 2rem;
+            background-image: url(../storage/img/label.png);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+            align-items: flex-end;
         }
 
         .hero-info {
-            max-width: 600px;
+            margin: 2rem;
+            z-index: 50;
         }
 
         .hero-title {
@@ -310,8 +597,10 @@
         .btn-play {
             background: #ab76ff8f;
             border: none;
+            width: 160px;
+            height: 60px;
             padding: 12px 24px;
-            border-radius: 25px;
+            border-radius: 13.9px;
             font-weight: 600;
             display: flex;
             align-items: center;
@@ -321,11 +610,9 @@
         }
 
         .btn-play-logo {
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 55px;
             display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 0.6rem;
             margin-left: 35px;
             margin-right: 35px;
@@ -336,19 +623,29 @@
 
         .btn-info {
             width: 60px;
-            height: 60px;
+            height: 50px;
             background-color: transparent;
             border: 0px solid transparent;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            margin-top: 28px;
-            margin-left: 35px;
+            margin-top: 5px;
+            margin-left: 5px;
             margin-right: 35px;
             background-image: url('../storage/img/image\ 38.png');
             background-size: cover;
             background-position: center;
+        }
+
+        .text{
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .text2{
+            text-decoration: none;
+            color: #AA76FF;
         }
 
         /* Content Sections */
@@ -402,6 +699,9 @@
             font-size: 0.8rem;
             text-align: center;
             position: relative;
+            background-image: url(https://image.tmdb.org/t/p/original/9050VGrYjYrEjpOvDZVAngLbg1f.jpg);
+            background-size: cover;
+            background-position: 50%;
         }
 
         /* Movie Year Label in corner */
@@ -427,6 +727,7 @@
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+            text-align: center;
             color: #AA76FF;
         }
 

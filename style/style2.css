@@ -299,6 +299,11 @@
             margin-left: 10px;
         }
 
+        .text1{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
         @keyframes spin {
             to {
                 transform: rotate(360deg);
