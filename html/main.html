@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style4.css">
+    <title>KarenFlix - Dashboard</title>
+    <body>
+<!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Usuario -->
+            <a href="#" class="sidebar-item" data-api-icon="profile" data-api-label="Profile">
+                <div class="sidebar-icon" data-api-profile-image>IMG</div>
+                <span class="sidebar-label">LABEL_PROFILE</span>
+            </a>
+
+            <!-- Categorías (18 total) -->
+            <a href="#" class="sidebar-item active" data-api-icon="home" data-api-label="Home">
+                <div class="sidebar-icon" data-api-home-image>IMG</div>
+                <span class="sidebar-label">LABEL_HOME</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="action" data-api-label="Action">
+                <div class="sidebar-icon" data-api-action-image>IMG</div>
+                <span class="sidebar-label">LABEL_ACTION</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="comedy" data-api-label="Comedy">
+                <div class="sidebar-icon" data-api-comedy-image>IMG</div>
+                <span class="sidebar-label">LABEL_COMEDY</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="drama" data-api-label="Drama">
+                <div class="sidebar-icon" data-api-drama-image>IMG</div>
+                <span class="sidebar-label">LABEL_DRAMA</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="horror" data-api-label="Horror">
+                <div class="sidebar-icon" data-api-horror-image>IMG</div>
+                <span class="sidebar-label">LABEL_HORROR</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="scifi" data-api-label="Sci-Fi">
+                <div class="sidebar-icon" data-api-scifi-image>IMG</div>
+                <span class="sidebar-label">LABEL_SCIFI</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="thriller" data-api-label="Thriller">
+                <div class="sidebar-icon" data-api-thriller-image>IMG</div>
+                <span class="sidebar-label">LABEL_THRILLER</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="romance" data-api-label="Romance">
+                <div class="sidebar-icon" data-api-romance-image>IMG</div>
+                <span class="sidebar-label">LABEL_ROMANCE</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="fantasy" data-api-label="Fantasy">
+                <div class="sidebar-icon" data-api-fantasy-image>IMG</div>
+                <span class="sidebar-label">LABEL_FANTASY</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="animation" data-api-label="Animation">
+                <div class="sidebar-icon" data-api-animation-image>IMG</div>
+                <span class="sidebar-label">LABEL_ANIMATION</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="documentary" data-api-label="Documentary">
+                <div class="sidebar-icon" data-api-documentary-image>IMG</div>
+                <span class="sidebar-label">LABEL_DOCUMENTARY</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="crime" data-api-label="Crime">
+                <div class="sidebar-icon" data-api-crime-image>IMG</div>
+                <span class="sidebar-label">LABEL_CRIME</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="family" data-api-label="Family">
+                <div class="sidebar-icon" data-api-family-image>IMG</div>
+                <span class="sidebar-label">LABEL_FAMILY</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="mystery" data-api-label="Mystery">
+                <div class="sidebar-icon" data-api-mystery-image>IMG</div>
+                <span class="sidebar-label">LABEL_MYSTERY</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="war" data-api-label="War">
+                <div class="sidebar-icon" data-api-war-image>IMG</div>
+                <span class="sidebar-label">LABEL_WAR</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="western" data-api-label="Western">
+                <div class="sidebar-icon" data-api-western-image>IMG</div>
+                <span class="sidebar-label">LABEL_WESTERN</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="music" data-api-label="Music">
+                <div class="sidebar-icon" data-api-music-image>IMG</div>
+                <span class="sidebar-label">LABEL_MUSIC</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="history" data-api-label="History">
+                <div class="sidebar-icon" data-api-history-image>IMG</div>
+                <span class="sidebar-label">LABEL_HISTORY</span>
+            </a>
+
+            <div class="sidebar-spacer"></div>
+            
+            <!-- Bottom Items -->
+            <a href="#" class="sidebar-item" data-api-icon="settings" data-api-label="Settings">
+                <div class="sidebar-icon" data-api-settings-image>IMG</div>
+                <span class="sidebar-label">LABEL_SETTINGS</span>
+            </a>
+            
+            <a href="#" class="sidebar-item" data-api-icon="logout" data-api-label="Logout">
+                <div class="sidebar-icon" data-api-logout-image>IMG</div>
+                <span class="sidebar-label">LABEL_LOGOUT</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Logo KarenFlix en esquina superior derecha -->
+    <div class="karenflix-logo">
+        <!-- Imagen local de KarenFlix -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+                        ☰
+                    </button>
+                </div>
+                <div class="section-nav">
+                    <button class="nav-btn" data-api-filter="movies">LABEL_MOVIES</button>
+                    <button class="nav-btn2" data-api-filter="series">LABEL_SERIES</button>
+                </div>
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="PLACEHOLDER_SEARCH" data-api-placeholder>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-image" data-api-hero-bg></div>
+            <div class="hero-background"></div>
+            
+            <div class="hero-content">
+                <div class="hero-info">
+                    <h1 class="hero-title" data-api-hero-title>
+                        LABEL_TITLE
+                    </h1>
+                    
+                    <div class="hero-meta">
+                        <div class="hero-rating">
+                            <span class="hero-stars" data-api-hero-stars">★</span>
+                            <span data-api-hero-rating>LABEL_RATING</span>
+                        </div>
+                        <span data-api-hero-year>LABEL_YEAR</span>
+                        <span data-api-hero-duration>LABEL_DURATION</span>
+                    </div>
+                    
+                    <!-- Maturity y Release Date -->
+                    <div class="hero-maturity-date">
+                        <span class="maturity-label" data-api-hero-maturity>LABEL_MATURITY</span>
+                        <span class="release-date-label" data-api-hero-release-date>LABEL_RELEASE_DATE</span>
+                    </div>
+                    
+                    <span data-api-hero-genres>LABEL_GENRES</span>
+                    <br><br>             
+                    <div class="hero-actions">
+                        <button class="btn-play" onclick="playContent()" data-api-hero-play>
+                            <div class="btn-play-logo">
+                                <!-- Imagen local de KarenFlix -->
+                            </div>
+                        </button>
+                        <button class="btn-info" onclick="showInfo()" data-api-hero-info>
+                            <div class="btn1"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movies Section -->
+        <div class="content-section">
+            <div class="section-header">
+                <h2 class="section-title" data-api-section-title>LABEL_MOVIES</h2>
+            </div>
+            
+            <div class="movies-grid" id="moviesGrid" data-api-movies-container>
+                <!-- Movie cards will be populated from API -->
+                <div class="movie-card" data-api-movie-item>
+                    <div class="movie-poster" data-api-movie-poster>
+                        <div class="movie-year-label" data-api-movie-year>LABEL_MOVIE_YEAR</div>
+                        POSTER_PLACEHOLDER
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title" data-api-movie-title>LABEL_MOVIE_TITLE</div>
+                        <div class="movie-rating" data-api-movie-rating></div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-api-movie-item>
+                    <div class="movie-poster" data-api-movie-poster>
+                        <div class="movie-year-label" data-api-movie-year>LABEL_MOVIE_YEAR</div>
+                        POSTER_PLACEHOLDER
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title" data-api-movie-title>LABEL_MOVIE_TITLE</div>
+                        <div class="movie-rating" data-api-movie-rating"></div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-api-movie-item>
+                    <div class="movie-poster" data-api-movie-poster>
+                        <div class="movie-year-label" data-api-movie-year>LABEL_MOVIE_YEAR</div>
+                        POSTER_PLACEHOLDER
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title" data-api-movie-title>LABEL_MOVIE_TITLE</div>
+                        <div class="movie-rating" data-api-movie-rating"></div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-api-movie-item>
+                    <div class="movie-poster" data-api-movie-poster>
+                        <div class="movie-year-label" data-api-movie-year>LABEL_MOVIE_YEAR</div>
+                        POSTER_PLACEHOLDER
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title" data-api-movie-title>LABEL_MOVIE_TITLE</div>
+                        <div class="movie-rating" data-api-movie-rating"></div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-api-movie-item>
+                    <div class="movie-poster" data-api-movie-poster>
+                        <div class="movie-year-label" data-api-movie-year>LABEL_MOVIE_YEAR</div>
+                        POSTER_PLACEHOLDER
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title" data-api-movie-title>LABEL_MOVIE_TITLE</div>
+                        <div class="movie-rating" data-api-movie-rating"></div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-api-movie-item>
+                    <div class="movie-poster" data-api-movie-poster>
+                        <div class="movie-year-label" data-api-movie-year>LABEL_MOVIE_YEAR</div>
+                        POSTER_PLACEHOLDER
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title" data-api-movie-title>LABEL_MOVIE_TITLE</div>
+                        <div class="movie-rating" data-api-movie-rating"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+<script src="../scripts/script2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</html>
