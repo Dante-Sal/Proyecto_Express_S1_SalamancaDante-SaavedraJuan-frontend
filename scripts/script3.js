@@ -113,7 +113,7 @@ function showError(message) {
     setTimeout(() => {
         errorMessage.style.display = 'none';
     }, 5000);
-}
+};
 
 // Show success message
 function showSuccess(message) {

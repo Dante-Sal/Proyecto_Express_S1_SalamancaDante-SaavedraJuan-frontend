@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style/style3.css" rel="stylesheet"/> 
+    <link href="../style/style3.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <title>KarenFlix - Login </title>
+    <script src="../scripts/connection_to_backend/register.js" defer></script>
+    <title>KarenFlix - Register</title>
 </head>
 
 <body>
-<div class="video-background">
+    <div class="video-background">
         <video autoplay muted loop>
-            <source src="../storage/video/2021 Best Trailers  Epic Trailer Music Mix - The Wizard (720p, h264).mp4" type="video/mp4">
-        </video> 
+            <source src="../storage/video/2021 Best Trailers  Epic Trailer Music Mix - The Wizard (720p, h264).mp4"
+                type="video/mp4">
+        </video>
     </div>
 
     <div class="overlay"></div>
-    
+
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-lg-6 col-md-6">
@@ -25,7 +27,7 @@
                     <div class="brand-logo">
                         <img src="../storage/img/processed_image 1.png" alt="KARENFLIX" href="../index.html">
                     </div>
-                    
+
                     <div class="subtitle-container">
                         <div class="subtitle">Your World of <span class="highlight">Movies</span></div>
                         <div class="subtitle-line2">& <span class="highlight">Series</span></div>
@@ -38,56 +40,76 @@
                     <div class="register-card">
                         <div class="logo-container">
                             <div class="kf-logo">
-                                <img src="../storage/img/7d42d326-9d68-4238-b356-0335caef8b57.png" alt="KF" onerror="this.parentElement.innerHTML='<div style=\'width:60px;height:60px;background:rgba(168,85,247,0.2);border:2px solid rgba(168,85,247,0.3);border-radius:15px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px);margin:0 auto 1.5rem;color:white;font-size:1.5rem;font-weight:900;text-shadow:2px 2px 4px rgba(0,0,0,0.5)\'>KF</div>'">
+                                <img src="../storage/img/7d42d326-9d68-4238-b356-0335caef8b57.png" alt="KF"
+                                    onerror="this.parentElement.innerHTML='<div style=\'width:60px;height:60px;background:rgba(168,85,247,0.2);border:2px solid rgba(168,85,247,0.3);border-radius:15px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px);margin:0 auto 1.5rem;color:white;font-size:1.5rem;font-weight:900;text-shadow:2px 2px 4px rgba(0,0,0,0.5)\'>KF</div>'">
                             </div>
-                            
+
                             <div class="welcome-text">Welcome!</div>
                             <div class="subtitle-text">Fill up this Data</div>
                         </div>
-                        
+
                         <form id="registerForm">
                             <div class="error-message" id="errorMessage"></div>
                             <div class="success-message" id="successMessage"></div>
-                            
+
                             <!-- First Row: First Name & Second Name -->
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                    <label for="firstName" class="form-label">First Name <span
+                                            class="required">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                        placeholder="Enter your first name" required>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label for="secondName" class="form-label">Second Name</label>
-                                    <input type="text" class="form-control" id="secondName" name="secondName" placeholder="Enter your second name">
+                                    <input type="text" class="form-control" id="secondName" name="secondName"
+                                        placeholder="Enter your second name">
                                 </div>
                             </div>
 
                             <!-- Second Row: First Surname & Second Surname -->
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="firstSurname" class="form-label">First Surname <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="firstSurname" name="firstSurname" placeholder="Enter your first surname" required>
+                                    <label for="firstSurname" class="form-label">First Surname <span
+                                            class="required">*</span></label>
+                                    <input type="text" class="form-control" id="firstSurname" name="firstSurname"
+                                        placeholder="Enter your first surname" required>
                                 </div>
-                                
+
                                 <div class="form-group">
-                                    <label for="secondSurname" class="form-label">Second Surname <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="secondSurname" name="secondSurname" placeholder="Enter your second surname" required>
+                                    <label for="secondSurname" class="form-label">Second Surname <span
+                                            class="required">*</span></label>
+                                    <input type="text" class="form-control" id="secondSurname" name="secondSurname"
+                                        placeholder="Enter your second surname" required>
                                 </div>
                             </div>
 
-                            <!-- Third Row: Email -->
-                            <div class="form-group full-width">
-                                <label for="email" class="form-label">Email <span class="required">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                            <!-- Third Row: Email & Username -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email <span class="required">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your email address" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="form-label">Username <span
+                                            class="required">*</span></label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                        placeholder="Enter your username" required>
+                                </div>
                             </div>
 
                             <!-- Fourth Row: Password & Role -->
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="password" class="form-label">Password <span class="required">*</span></label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
+                                    <label for="password" class="form-label">Password <span
+                                            class="required">*</span></label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Create a password" required>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <label for="role" class="form-label">Role <span class="required">*</span></label>
                                     <select class="form-select" id="role" name="role" required>
@@ -100,15 +122,17 @@
                             <!-- Fifth Row: Avatar URL -->
                             <div class="form-group full-width">
                                 <label for="avatarUrl" class="form-label">Avatar URL</label>
-                                <input type="url" class="form-control" id="avatarUrl" name="avatarUrl" placeholder="Enter avatar image URL (optional)">
+                                <input type="url" class="form-control" id="avatarUrl" name="avatarUrl"
+                                    placeholder="Enter avatar image URL (optional)">
                             </div>
-                            
-                            <button type="submit" class="btn-register" id="registerBtn" href="../html/main.html">
-                                <a class="text1" href="../html/main.html">Create Account</a>
+
+                            <button type="submit" class="btn-register" id="registerBtn">
+                                <a class="text1">Create Account</a>
                             </button>
-                            
+
                             <div class="signin-link">
-                                Already have an account? <a href="../html/login.html" onclick="handleSignIn()">Sign in here</a>
+                                Already have an account? <a href="../html/login.html" onclick="handleSignIn()">Sign in
+                                    here</a>
                             </div>
                         </form>
                     </div>
