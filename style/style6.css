@@ -57,11 +57,10 @@ body {
     border-left-color: #AA76FF;
 }
 
-.sidebar-icon1 {
+.sidebar-icon {
     width: 24px;
     height: 24px;
     min-width: 24px;
-    background-image: url(../storage/img/user_avatar.png);
     border-radius: 4px;
     margin-right: 1rem;
     display: flex;
@@ -72,292 +71,25 @@ body {
     background-position: center;
 }
 
-.sidebar-icon2 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image: url(../storage/img/home.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon3 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/animacion.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon4 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/comedy.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon5 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/drama.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon6 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/horror.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon7 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-                background-image:url(../storage/img/Sci-fi.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon8 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-                background-image:url(../storage/img/thriller.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon9 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/romance.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon10 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/fantasy.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.sidebar-icon12 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/documentary.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon13 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/crime.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon14 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/family.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon15 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/little_mystery.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon16 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/war.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon17 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/west.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon18 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/music.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon19 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-image:url(../storage/img/history.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon20 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-                background-image:url(../storage/img/settings.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.sidebar-icon21 {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-                background-image:url(../storage/img/logout.png);
-    border-radius: 4px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    background-size: cover;
-    background-position: center;
-}
-
+.sidebar-icon1 { background-image: url(../storage/img/user_avatar.png); }
+.sidebar-icon2 { background-image: url(../storage/img/home.png); }
+.sidebar-icon3 { background-image: url(../storage/img/animacion.png); }
+.sidebar-icon4 { background-image: url(../storage/img/comedy.png); }
+.sidebar-icon5 { background-image: url(../storage/img/drama.png); }
+.sidebar-icon6 { background-image: url(../storage/img/horror.png); }
+.sidebar-icon7 { background-image: url(../storage/img/Sci-fi.png); }
+.sidebar-icon8 { background-image: url(../storage/img/thriller.png); }
+.sidebar-icon9 { background-image: url(../storage/img/romance.png); }
+.sidebar-icon10 { background-image: url(../storage/img/fantasy.png); }
+.sidebar-icon12 { background-image: url(../storage/img/documentary.png); }
+.sidebar-icon13 { background-image: url(../storage/img/crime.png); }
+.sidebar-icon14 { background-image: url(../storage/img/family.png); }
+.sidebar-icon15 { background-image: url(../storage/img/little_mystery.png); }
+.sidebar-icon16 { background-image: url(../storage/img/war.png); }
+.sidebar-icon17 { background-image: url(../storage/img/west.png); }
+.sidebar-icon18 { background-image: url(../storage/img/music.png); }
+.sidebar-icon19 { background-image: url(../storage/img/history.png); }
+.sidebar-icon21 { background-image: url(../storage/img/logout.png); }
 
 .sidebar-label {
     white-space: nowrap;
@@ -380,24 +112,261 @@ body {
     padding: 0;
 }
 
-
 /* Logo KarenFlix en esquina */
 .karenflix-logo {
     position: absolute;
     top: 20px;
     right: 30px;
-    width: 580px;
+    width: 480px;
     height: 200px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #AA76FF;
     z-index: 100;
-    background-image: url('../storage/img/karenflix_logo.png');
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    background-image: url(../storage/img/karenflix_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Movie Detail Content */
+.movie-detail-container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    background-image: url(../storage/img/label3.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.movie-detail-content {
+    display: flex;
+    gap: 3rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.movie-poster-container {
+    flex-shrink: 0;
+}
+
+.movie-poster {
+    width: 350px;
+    height: 520px;
+    border-radius: 12px;
+    background-image: url('https://image.tmdb.org/t/p/original/9050VGrYjYrEjpOvDZVAngLbg1f.jpg');
     background-size: cover;
     background-position: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.movie-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.movie-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #AA76FF;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.movie-metadata {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.metadata-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.metadata-label {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+}
+
+.metadata-value {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.maturity-rating {
+    background: rgba(170, 118, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 1px solid rgba(170, 118, 255, 0.3);
+}
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.star-icon {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+.rating-score {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.movie-genres {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.genre-tag {
+    color: #AA76FF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.genre-tag:hover {
+    color: #C999FF;
+}
+
+.movie-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 3rem;
+}
+
+.kf-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #AA76FF;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 35px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Reviews Section */
+
+.review-new{
+    display: grid;
+}
+
+.reviews-section {
+    margin-top: 2rem;
+}
+
+.reviews-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.write-review-btn {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    float: right;
+    margin-top: -4rem;
+}
+
+.write-review-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.review-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reviewer-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.reviewer-handle {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.review-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    line-height: 1.6;
+    color: rgba(255,255,255,0.8);
+}
+
+.review-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+}
+
+.review-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: rgba(170, 118, 255, 0.2);
+    border: 1px solid rgba(170, 118, 255, 0.3);
+    color: #AA76FF;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /* Responsive Design */
@@ -415,60 +384,43 @@ body {
         margin-left: 0;
     }
 
-    .header-content {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .search-section {
-        margin: 0;
-        max-width: none;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .hero-actions {
-        flex-direction: column;
+    .mobile-menu-btn {
+        display: block;
     }
 
     .karenflix-logo {
         position: static;
-        width: 60px;
-        height: 60px;
-        margin-bottom: 1rem;
+        width: auto;
+        height: auto;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
     }
 
-    .movies-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 1rem;
+    .movie-detail-content {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 0;
     }
 
     .movie-poster {
-        height: 220px;
+        width: 280px;
+        height: 420px;
+        margin: 0 auto;
     }
-}
 
-/* Mobile Menu Button */
-.mobile-menu-btn {
-    display: none;
-    background: rgba(170, 118, 255, 0.2);
-    border: 1px solid rgba(170, 118, 255, 0.3);
-    color: #AA76FF;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-}
+    .movie-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 
-@media (max-width: 768px) {
-    .mobile-menu-btn {
-        display: block;
+    .movie-metadata {
+        justify-content: center;
+    }
+
+    .write-review-btn {
+        float: none;
+        margin-top: 1rem;
+        width: 100%;
     }
 }
