@@ -57,7 +57,6 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     if (!result.ok) { showError(result.error); return unwaitBtn(); };
 
     if (result.redirect) {
-        unwaitBtn();
         showSuccess(result.message);
 
         setTimeout(() => {
