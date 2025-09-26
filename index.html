@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style/style.css" rel="stylesheet"/> 
+    <link href="./style/style.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./scripts/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
     <title>KarenFlix - Start Up</title>
 </head>
 
 <body>
     <div class="video-background">
         <video autoplay muted loop>
-            <source src="./storage/video/2021 Best Trailers  Epic Trailer Music Mix - The Wizard (720p, h264).mp4" type="video/mp4">
-        </video> 
+            <source src="./storage/video/bg_video.mp4" type="video/mp4">
+        </video>
     </div>
 
     <div class="overlay"></div>
-    
+
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-lg-7 col-md-6">
                 <div class="left-section">
                     <div class="brand-logo">
-                        <img src="./storage/img/processed_image 1.png" alt="KARENFLIX" href="./index.html"/>
+                        <img src="./storage/img/karenflix_logo.png" alt="KARENFLIX" href="./index.html" />
                     </div>
-                    
+
                     <div class="subtitle">Your World of <span class="highlight">Movies</span></div>
                     <div class="subtitle-line2">& <span class="highlight">Series</span></div>
                     <div class="subtitle-line3">in Just <span class="highlight">ONE</span> Click!</div>
@@ -36,27 +38,26 @@
                     <div class="login-card">
                         <div class="logo-container">
                             <div class="kf-logo">
-                                <img src="./storage/img/7d42d326-9d68-4238-b356-0335caef8b57.png" alt="KF">
+                                <img src="./storage/img/karenflix_monogram.png" alt="KF">
                             </div>
-                            
+
                             <div class="welcome-text">Welcome!</div>
                             <div class="new-user-text">New to KarenFlix...?</div>
                         </div>
-                        
+
                         <div class="form-container">
                             <div class="btn-register-container">
-                            <button class='btn-fallback'>
-                            <a class="text1" href="./html/register.html"> Register NOW!</a> 
-                            </button>
+                                <button class='btn-fallback register'>
+                                    Register NOW!
+                                </button>
                             </div>
-                            
+
                             <div class="or-divider">or</div>
-                            
+
                             <div class="btn-signin-container">
-                            <button class='btn-fallback signin'>
-                            <a class="text2"href="./html/login.html">
-                                Sign in 
-                            </a>
+                                <button class='btn-fallback signin'>
+                                    Sign in
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -66,6 +67,5 @@
     </div>
 
 </body>
-<script src="./scripts/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </html>

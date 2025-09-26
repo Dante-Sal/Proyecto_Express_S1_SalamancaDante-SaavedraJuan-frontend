@@ -54,9 +54,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0 5rem;
+    align-items: center;
+    padding: 0 3rem;
     height: 100vh;
+    text-align: center;
 }
 
 /* KARENFLIX logo image container */
@@ -64,13 +65,17 @@ body {
     margin-bottom: 3rem;
     max-width: 800px;
     width: 100%;
-    
+
 }
 
 .brand-logo img {
     width: 100%;
     height: auto;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.subtitle-container {
+    text-align: center;
 }
 
 .subtitle {
@@ -224,12 +229,12 @@ body {
     transform: translateY(-2px);
 }
 
-.text1{
+.text1 {
     text-decoration: none;
     color: #ffffff;
 }
 
-.text2{
+.text2 {
     text-decoration: none;
     color: #AA76FF;
 }
@@ -242,35 +247,35 @@ body {
     .left-section {
         padding: 0 3rem;
     }
-    
+
     .brand-logo {
         max-width: 700px;
     }
-    
+
     .subtitle {
         font-size: 3rem;
         margin-left: 3rem;
     }
-    
+
     .subtitle-line2 {
         font-size: 3rem;
         margin-left: 10rem;
     }
-    
+
     .subtitle-line3 {
         font-size: 3rem;
         margin-left: 4rem;
     }
-    
+
     .login-card {
         width: 450px;
         padding: 3.5rem;
     }
-    
+
     .welcome-text {
         font-size: 2.2rem;
     }
-    
+
     .kf-logo {
         width: 90px;
         height: 90px;
@@ -282,38 +287,38 @@ body {
     .left-section {
         padding: 0 2rem;
     }
-    
+
     .brand-logo {
         max-width: 600px;
     }
-    
+
     .subtitle,
     .subtitle-line2,
     .subtitle-line3 {
         font-size: 2.5rem;
     }
-    
+
     .subtitle {
         margin-left: 2rem;
     }
-    
+
     .subtitle-line2 {
         margin-left: 8rem;
     }
-    
+
     .subtitle-line3 {
         margin-left: 3rem;
     }
-    
+
     .login-card {
         width: 400px;
         padding: 3rem;
     }
-    
+
     .welcome-text {
         font-size: 2rem;
     }
-    
+
     .kf-logo {
         width: 80px;
         height: 80px;
@@ -326,12 +331,12 @@ body {
         overflow-y: auto;
         height: auto;
     }
-    
+
     .container-fluid {
         height: auto;
         min-height: 100vh;
     }
-    
+
     .left-section {
         padding: 3rem 2rem 2rem 2rem;
         text-align: center;
@@ -339,18 +344,18 @@ body {
         height: auto;
         min-height: 60vh;
     }
-    
+
     .right-section {
         height: auto;
         min-height: 40vh;
         padding: 2rem;
     }
-    
+
     .brand-logo {
         max-width: 400px;
         margin-bottom: 1.5rem;
     }
-    
+
     .subtitle,
     .subtitle-line2,
     .subtitle-line3 {
@@ -358,7 +363,7 @@ body {
         margin-left: 0 !important;
         text-align: center;
     }
-    
+
     .login-card {
         margin: 1rem;
         padding: 2rem;
@@ -373,33 +378,33 @@ body {
         padding: 2rem 1rem 1.5rem 1rem;
         min-height: 50vh;
     }
-    
+
     .right-section {
         padding: 1.5rem 1rem 2rem 1rem;
         min-height: 50vh;
     }
-    
+
     .brand-logo {
         max-width: 300px;
         margin-bottom: 1rem;
     }
-    
+
     .subtitle,
     .subtitle-line2,
     .subtitle-line3 {
         font-size: 1.4rem;
         margin-bottom: 0.3rem;
     }
-    
+
     .login-card {
         padding: 1.5rem;
         margin: 1rem 0.5rem;
     }
-    
+
     .welcome-text {
         font-size: 1.7rem;
     }
-    
+
     .kf-logo {
         width: 60px;
         height: 60px;
@@ -411,18 +416,18 @@ body {
     .brand-logo {
         max-width: 250px;
     }
-    
+
     .subtitle,
     .subtitle-line2,
     .subtitle-line3 {
         font-size: 1.2rem;
     }
-    
+
     .login-card {
         padding: 1.2rem;
         margin: 1rem 0.3rem;
     }
-    
+
     .welcome-text {
         font-size: 1.5rem;
     }
@@ -433,35 +438,35 @@ body {
     .container-fluid {
         height: auto;
     }
-    
+
     .left-section,
     .right-section {
         height: auto;
         min-height: auto;
         padding: 1rem;
     }
-    
+
     .brand-logo {
         max-width: 200px;
         margin-bottom: 0.5rem;
     }
-    
+
     .subtitle,
     .subtitle-line2,
     .subtitle-line3 {
         font-size: 1rem;
         margin-bottom: 0.2rem;
     }
-    
+
     .login-card {
         padding: 1rem;
         max-width: 300px;
     }
-    
+
     .welcome-text {
         font-size: 1.3rem;
     }
-    
+
     .kf-logo {
         width: 50px;
         height: 50px;

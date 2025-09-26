@@ -61,7 +61,7 @@
             width: 24px;
             height: 24px;
             min-width: 24px;
-            background-image: url(../storage/img/image\ 7.png);
+            background-image: url(../storage/img/user_avatar.png);
             border-radius: 4px;
             margin-right: 1rem;
             display: flex;
@@ -76,7 +76,7 @@
             width: 24px;
             height: 24px;
             min-width: 24px;
-            background-image: url(../storage/img/image\ 40.png);
+            background-image: url(../storage/img/home.png);
             border-radius: 4px;
             margin-right: 1rem;
             display: flex;
@@ -474,7 +474,7 @@
             font-weight: bold;
             color: #AA76FF;
             z-index: 100;
-            background-image: url('../storage/img/7d42d326-9d68-4238-b356-0335caef8b57.png');
+            background-image: url('../storage/img/karenflix_monogram.png');
             background-size: cover;
             background-position: center;
         }
@@ -616,7 +616,7 @@
             font-size: 0.6rem;
             margin-left: 35px;
             margin-right: 35px;
-            background-image: url('../storage/img/7d42d326-9d68-4238-b356-0335caef8b57.png');
+            background-image: url('../storage/img/karenflix_monogram.png');
             background-size: cover;
             background-position: center;
         }
@@ -633,7 +633,7 @@
             margin-top: 5px;
             margin-left: 5px;
             margin-right: 35px;
-            background-image: url('../storage/img/image\ 38.png');
+            background-image: url('../storage/img/more.png');
             background-size: cover;
             background-position: center;
         }

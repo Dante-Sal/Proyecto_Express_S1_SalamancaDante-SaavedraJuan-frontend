@@ -1,16 +1,42 @@
 const errorMessage = document.getElementById('errorMessage');
+const successMessage = document.getElementById('successMessage');
+const registerBtn = document.getElementById('registerBtn');
 
 function showError(message) {
     errorMessage.textContent = message;
     errorMessage.style.display = 'block';
-    
+    successMessage.style.display = 'none';
+
     setTimeout(() => {
         errorMessage.style.display = 'none';
     }, 5000);
 };
 
+function showSuccess(message) {
+    successMessage.textContent = message;
+    successMessage.style.display = 'block';
+    errorMessage.style.display = 'none';
+
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+    }, 3000);
+};
+
+function waitBtn() {
+    registerBtn.classList.add('loading');
+    registerBtn.disabled = true;
+    registerBtn.textContent = 'Creating Account...';
+};
+
+function unwaitBtn() {
+    registerBtn.classList.remove('loading');
+    registerBtn.disabled = false;
+    registerBtn.textContent = 'Create Account';
+};
+
 document.getElementById('registerForm').addEventListener('submit', async (e) => {
     e.preventDefault();
+    waitBtn();
 
     const body = {};
 
@@ -33,13 +59,22 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
     body.role = e.target.children[5].children[1].children.role.value;
     if (avatarUrl.trim() !== '') body.avatar_url = avatarUrl;
 
-    const res = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/register', {
+    const response = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
     });
 
-    const result = await res.json();
-    if (!res.ok) return showError(result.error);
-    if (result.redirect) window.location.href = result.redirect;
+    const result = await response.json();
+    
+    if (!result.ok) { showError(result.error); return unwaitBtn(); };
+
+    if (result.redirect) {
+        unwaitBtn();
+        showSuccess(result.message);
+
+        setTimeout(() => {
+            window.location.href = window.location.origin + result.redirect;
+        }, 3000);
+    };
 });
