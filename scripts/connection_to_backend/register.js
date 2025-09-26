@@ -40,6 +40,6 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
     });
 
     const result = await res.json();
-    if (!res.ok) return showError(result.message);
+    if (!res.ok) return showError(result.error);
     if (result.redirect) window.location.href = result.redirect;
 });
