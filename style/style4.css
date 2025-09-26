@@ -332,7 +332,7 @@
             width: 24px;
             height: 24px;
             min-width: 24px;
-                        background-image:url(../storage/img/comedy.png);
+                        background-image:url(../storage/img/settings.png);
             border-radius: 4px;
             margin-right: 1rem;
             display: flex;
@@ -347,7 +347,7 @@
             width: 24px;
             height: 24px;
             min-width: 24px;
-                        background-image:url(../storage/img/comedy.png);
+                        background-image:url(../storage/img/logout.png);
             border-radius: 4px;
             margin-right: 1rem;
             display: flex;
