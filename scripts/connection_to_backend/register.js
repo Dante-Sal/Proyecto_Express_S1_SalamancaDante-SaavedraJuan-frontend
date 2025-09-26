@@ -3,7 +3,6 @@ const errorMessage = document.getElementById('errorMessage');
 function showError(message) {
     errorMessage.textContent = message;
     errorMessage.style.display = 'block';
-    successMessage.style.display = 'none';
     
     setTimeout(() => {
         errorMessage.style.display = 'none';
