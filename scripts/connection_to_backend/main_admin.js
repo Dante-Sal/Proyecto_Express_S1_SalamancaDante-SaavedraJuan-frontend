@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     sidebar_logout.addEventListener('click', async () => {
         const logOutResponse = await fetch(`${API}/users/logout`, { credentials: 'include' });
         const logOutResult = await logOutResponse.json();
-        if (logOutResult.redirect) window.location.href = window.location.origin + logOutResult.redirect;
+        if (logOutResult.redirect) window.location.href = window.location.origin + ROOT + logOutResult.redirect;
     });
 });
