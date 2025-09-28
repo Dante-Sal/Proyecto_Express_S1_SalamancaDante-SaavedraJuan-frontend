@@ -49,7 +49,8 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     const response = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
+        credentials: 'include'
     });
 
     const result = await response.json();
