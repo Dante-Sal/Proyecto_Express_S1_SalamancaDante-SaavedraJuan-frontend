@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.querySelector('.register').addEventListener('click', () => {
-        window.location.href = window.location.origin + '/html/register.html'
+        window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend/html/register.html'
     });
 
     document.querySelector('.signin').addEventListener('click', () => {
-        window.location.href = window.location.origin + '/html/login.html'
+        window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend/html/login.html'
     });
 });
