@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (meResult.ok) {
         const data = meResult.document;
-        if (data.role === 'admin') { window.location.href = window.location.origin + ROOT + data.redirect; return; };
+        if (data.role === 'admin') { window.location.href = window.location.origin + ROOT + meResult.redirect; return; };
 
         avatar_image.style.backgroundImage = `url("${data.avatar_url}")`;
         profile_username.innerText = `@${data.username}`;
