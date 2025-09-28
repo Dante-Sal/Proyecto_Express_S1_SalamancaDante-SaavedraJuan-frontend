@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style/style2.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://proyecto-express-s1-salamancadante.onrender.com" crossorigin>
+    <link rel="dns-prefetch" href="https://proyecto-express-s1-salamancadante.onrender.com">
     <script src="../scripts/connection_to_backend/login.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
     <title>KarenFlix - Login</title>
@@ -26,7 +28,7 @@
         </div>
     </div>
     <div class="video-background">
-        <video autoplay muted loop>
+        <video autoplay muted loop preload="none">
             <source src="../storage/video/bg_video.mp4" type="video/mp4">
         </video>
     </div>
@@ -38,7 +40,7 @@
             <div class="col-lg-6 col-md-6">
                 <div class="left-section">
                     <div class="brand-logo">
-                        <img src="../storage/img/karenflix_logo.png" alt="KARENFLIX" href="../index.html" />
+                        <img loading="lazy" src="../storage/img/karenflix_logo.png" alt="KARENFLIX" href="../index.html" />
                     </div>
 
                     <div class="subtitle-container">
@@ -53,7 +55,7 @@
                     <div class="login-card">
                         <div class="logo-container">
                             <div class="kf-logo">
-                                <img src="../storage/img/karenflix_monogram.png" alt="KF" href="../index.html" />
+                                <img loading="lazy" src="../storage/img/karenflix_monogram.png" alt="KF" href="../index.html" />
                             </div>
 
                             <div class="welcome-text">Welcome!</div>
