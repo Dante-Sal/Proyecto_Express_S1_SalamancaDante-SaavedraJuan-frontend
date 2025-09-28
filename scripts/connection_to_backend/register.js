@@ -74,7 +74,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         showSuccess(result.message);
 
         setTimeout(() => {
-            window.location.href = window.location.origin + result.redirect;
+            window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + result.redirect;
         }, 3000);
     };
 });
