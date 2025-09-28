@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    const invisible_elements = document.querySelectorAll(':not(.visible)');
+    const loader = document.querySelector('.loader-background');
     const errorMessage = document.getElementById('errorMessage');
     const successMessage = document.getElementById('successMessage');
     const signinBtn = document.getElementById('signinBtn');
@@ -40,7 +42,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const meResponse = await fetch(`${API}/users/me`, { credentials: 'include' });
     const meResult = await meResponse.json();
 
-    if (meResponse.status === 200) { window.location.href = window.location.origin + ROOT + meResult.redirect; return; };
+    if (meResponse.status === 200) { window.location.href = window.location.origin + ROOT + meResult.redirect; return; }
+    else {
+        document.querySelector('body').style.overflowY = 'auto';
+
+        invisible_elements.forEach(element => {
+            element.style.visibility = 'initial';
+        });
+
+        loader.style.display = 'none';
+    };
 
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
         e.preventDefault();
