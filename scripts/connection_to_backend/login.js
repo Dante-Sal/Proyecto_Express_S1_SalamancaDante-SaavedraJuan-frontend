@@ -64,7 +64,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             showSuccess(result.message);
 
             setTimeout(() => {
-                window.location.href = window.location.origin + ROOT + result.redirect.user;
+                window.location.href = window.location.origin + ROOT + result.redirect;
             }, 3000);
         };
     } catch (err) {
