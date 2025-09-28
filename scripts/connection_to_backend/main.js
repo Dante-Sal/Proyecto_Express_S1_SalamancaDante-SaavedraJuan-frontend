@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     const meResponse = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/me', { credentials: 'include' });
     const meResult = await meResponse.json();
     
-    if (meResponse.status === 401) window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + meResult.redirect;
+    if (meResponse.status === 401) { window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + meResult.redirect; return; };
     
     if (meResult.ok) {
         const data = meResult.document;
-        if (data.role === 'admin') window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + data.redirect.admin;
+        if (data.role === 'admin') { window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + data.redirect.admin; return; };
 
-        avatar_image.style.backgroundImage = url(data.avatar_url);
+        avatar_image.style.backgroundImage = `url("${data.avatar_url}")`;
         profile_username.innerText = `@${data.username}`;
     };
 
