@@ -1,804 +1,893 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Inter", sans-serif;
-            background: #000000;
-            color: white;
-            overflow-x: hidden;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 60px;
-            height: 100vh;
-            margin-right: 0;
-            background: rgba(170, 118, 255, 0.15);
-            backdrop-filter: blur(20px);
-            border-right: 1px solid rgba(170, 118, 255, 0.2);
-            z-index: 1000;
-            transition: width 0.3s ease;
-        }
-
-        .sidebar:hover {
-            width: 250px;
-        }
-
-        .sidebar-content {
-            padding: 1rem 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sidebar-item {
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border-left: 3px solid transparent;
-        }
-
-        .sidebar-item:hover,
-        .sidebar-item.active {
-            background: rgba(170, 118, 255, 0.1);
-            color: #AA76FF;
-            border-left-color: #AA76FF;
-        }
-
-        .sidebar-icon1 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon2 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image: url(../storage/img/home.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon3 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/animacion.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon4 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/comedy.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon5 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/drama.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon6 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/horror.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon7 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-                        background-image:url(../storage/img/Sci-fi.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon8 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-                        background-image:url(../storage/img/thriller.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .sidebar-icon9 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/romance.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon10 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/fantasy.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-
-        .sidebar-icon12 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/documentary.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon13 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/crime.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon14 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/family.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon15 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/little_mystery.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon16 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/war.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon17 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/west.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon18 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/music.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon19 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background-image:url(../storage/img/history.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon20 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-                        background-image:url(../storage/img/settings.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sidebar-icon21 {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-                        background-image:url(../storage/img/logout.png);
-            border-radius: 4px;
-            margin-right: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            background-size: cover;
-            background-position: center;
-        }
-
-
-        .sidebar-label {
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .sidebar:hover .sidebar-label {
-            opacity: 1;
-        }
-
-        .sidebar-spacer {
-            flex: 1;
-        }
-
-        /* Main Content */
-        .main-content {
-            margin-left: 60px;
-            min-height: 100vh;
-            padding: 0;
-        }
-
-        /* Header */
-        .header {
-            
-            padding-top: 16px;
-            top: 0;
-            position: absolute;
-            z-index: 100;
-        }
-
-        .header-content {
-            display: flex;
-        }
-
-        .search-section {
-            flex: 1;
-            max-width: 600px;
-            margin: 0 2rem;
-        }
-
-        .search-bar {
-            position: relative;
-        }
-
-        .search-input {
-            width: 100%;
-            background: rgba(170, 118, 255, 0.1);
-            border: 1px solid rgba(170, 118, 255, 0.3);
-            border-radius: 25px;
-            padding: 12px 20px;
-            color: white;
-            font-size: 0.95rem;
-        }
-
-        .search-input::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .search-input:focus {
-            outline: none;
-            border-color: #AA76FF;
-            box-shadow: 0 0 0 0.2rem rgba(170, 118, 255, 0.25);
-        }
-
-        .nav-btn {
-            background: rgba(171, 118, 255, 0.719);
-            border: 0px solid rgba(170, 118, 255, 0.3);
-            color: #AA76FF;
-            padding: 8px 20px;
-            margin-top: 7px;
-            margin-left: 20px;
-            border-bottom-left-radius: 20px;
-            border-top-left-radius: 20px;
-            cursor: pointer;
-        }
-
-        .nav-btn2 {
-            background: rgba(255, 255, 255, 0.671);
-            border: 0px solid rgba(170, 118, 255, 0.3);
-            margin-left: -5px;
-            color: rgba(255, 255, 255, 0.925);
-            padding: 8px 20px;
-            border-bottom-right-radius: 20px;
-            border-top-right-radius: 20px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .nav-btn.active,
-        .nav-btn:hover {
-            background: rgba(171, 118, 255, 0.479);
-            color: #AA76FF;
-            border-color: #AA76FF;
-        }
-
-        .nav-btn2:hover {
-            background: rgba(255, 255, 255, 0.473);
-            color: #ffffff;
-            border-color: #AA76FF;
-        }
-
-        /* Logo KarenFlix en esquina */
-        .karenflix-logo {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            width: 180px;
-            height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #AA76FF;
-            z-index: 100;
-            background-image: url('../storage/img/karenflix_monogram.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            position: relative;
-            height: 70vh;
-            background: #0f0f23;
-            overflow: hidden;
-        }
-
-        .hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #0f0f23;
-            z-index: 1;
-        }
-
-        .hero-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #0f0f23;
-            opacity: 0.1;
-        }
-        
-        .degradado {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient( #000000, #00000000, #000000);
-        }
-
-        .hero-content {
-            background-position-x: 50%;
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            display: flex;
-            background-image: url(../storage/img/label.png);
-            background-repeat: no-repeat;
-            background-position: 50%;
-            background-size: cover;
-            align-items: flex-end;
-        }
-
-        .hero-info {
-            margin: 2rem;
-            z-index: 50;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero-meta {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .hero-rating {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .hero-stars {
-            color: #fbbf24;
-        }
-
-        /* Hero Maturity and Release Date Labels */
-        .hero-maturity-date {
-            display: flex;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .maturity-label {
-            background: rgba(171, 118, 255, 0.719);
-            border: 0px solid rgba(170, 118, 255, 0.3);
-            color: #000000;
-            padding: 6px 16px;
-            border-bottom-left-radius: 15px;
-            border-top-left-radius: 15px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        .release-date-label {
-            background: rgba(255, 255, 255, 0.671);
-            border: 0px solid rgba(170, 118, 255, 0.3);
-            color: rgba(0, 0, 0, 0.925);
-            margin-left: -11px;
-            padding: 6px 16px;
-            border-bottom-right-radius: 15px;
-            border-top-right-radius: 15px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-
-        .hero-actions {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .btn-play {
-            background: #ab76ff8f;
-            border: none;
-            width: 160px;
-            height: 60px;
-            padding: 12px 24px;
-            border-radius: 13.9px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .btn-play-logo {
-            width: 80px;
-            height: 55px;
-            display: flex;
-            font-size: 0.6rem;
-            margin-left: 35px;
-            margin-right: 35px;
-            background-image: url('../storage/img/karenflix_monogram.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .btn-info {
-            width: 60px;
-            height: 50px;
-            background-color: transparent;
-            border: 0px solid transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            margin-top: 5px;
-            margin-left: 5px;
-            margin-right: 35px;
-            background-image: url('../storage/img/more.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .text{
-            text-decoration: none;
-            color: #FFFFFF;
-        }
-
-        .text2{
-            text-decoration: none;
-            color: #AA76FF;
-        }
-
-        /* Content Sections */
-        .content-section {
-            padding: 2rem;
-        }
-
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: white;
-        }
-
-        /* Movie Grid */
-        .movies-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .movie-card {
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .movie-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(170, 118, 255, 0.3);
-            border-color: #AA76FF;
-        }
-
-        .movie-poster {
-            width: 100%;
-            height: 280px;
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-            background: linear-gradient(135deg, rgba(170, 118, 255, 0.2), rgba(147, 51, 234, 0.2));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.8rem;
-            text-align: center;
-            position: relative;
-            background-image: url(https://image.tmdb.org/t/p/original/9050VGrYjYrEjpOvDZVAngLbg1f.jpg);
-            background-size: cover;
-            background-position: 50%;
-        }
-
-        /* Movie Year Label in corner */
-        .movie-year-label {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            color: rgb(0, 0, 0);
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            z-index: 10;
-        }
-
-        .movie-info {
-            padding: 1.9rem;
-        }
-
-        .movie-title {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            text-align: center;
-            color: #AA76FF;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-            }
-
-            .sidebar.open {
-                transform: translateX(0);
-                width: 250px;
-            }
-
-            .main-content {
-                margin-left: 0;
-            }
-
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .search-section {
-                margin: 0;
-                max-width: none;
-            }
-
-            .hero-title {
-                font-size: 2.5rem;
-            }
-
-            .hero-meta {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-
-            .hero-actions {
-                flex-direction: column;
-            }
-
-            .karenflix-logo {
-                position: static;
-                width: 60px;
-                height: 60px;
-                margin-bottom: 1rem;
-            }
-
-            .movies-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 1rem;
-            }
-
-            .movie-poster {
-                height: 220px;
-            }
-        }
-
-        /* Mobile Menu Button */
-        .mobile-menu-btn {
-            display: none;
-            background: rgba(170, 118, 255, 0.2);
-            border: 1px solid rgba(170, 118, 255, 0.3);
-            color: #AA76FF;
-            padding: 8px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-        }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: "Inter", sans-serif;
+     background: #000000;
+     color: white;
+     overflow-x: hidden;
+     overflow-y: hidden;
+ }
+
+ :not(.visible) {
+    visibility: hidden;
+ }
+
+ @keyframes loader_5191 {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .loader-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 10000;
+ }
+
+ .square {
+     background: #ddd;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-top: -5px;
+     margin-left: -5px;
+     z-index: 10000;
+ }
+
+ #sq1 {
+     margin-top: -55px;
+     margin-left: -55px;
+     animation: loader_5191 675ms ease-in-out 0s infinite alternate;
+ }
+
+ #sq2 {
+     margin-top: -55px;
+     animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
+ }
+
+ #sq3 {
+     margin-top: -55px;
+     margin-left: 45px;
+     animation: loader_5191 675ms ease-in-out 150ms infinite;
+ }
+
+ #sq4 {
+     margin-left: -55px;
+     animation: loader_5191 675ms ease-in-out 225ms infinite;
+ }
+
+ #sq5 {
+     animation: loader_5191 675ms ease-in-out 300ms infinite;
+ }
+
+ #sq6 {
+     margin-left: 45px;
+     animation: loader_5191 675ms ease-in-out 375ms infinite;
+ }
+
+ #sq7 {
+     margin-top: 45px;
+     margin-left: -55px;
+     animation: loader_5191 675ms ease-in-out 450ms infinite;
+ }
+
+ #sq8 {
+     margin-top: 45px;
+     animation: loader_5191 675ms ease-in-out 525ms infinite;
+ }
+
+ #sq9 {
+     margin-top: 45px;
+     margin-left: 45px;
+     animation: loader_5191 675ms ease-in-out 600ms infinite;
+ }
+
+ /* Sidebar */
+ .sidebar {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 60px;
+     height: 100vh;
+     margin-right: 0;
+     background: rgba(170, 118, 255, 0.15);
+     backdrop-filter: blur(20px);
+     border-right: 1px solid rgba(170, 118, 255, 0.2);
+     z-index: 1000;
+     transition: width 0.3s ease;
+ }
+
+ .sidebar:hover {
+     width: 250px;
+ }
+
+ .sidebar-content {
+     padding: 1rem 0;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .sidebar-item {
+     display: flex;
+     align-items: center;
+     padding: 1rem;
+     color: rgba(255, 255, 255, 0.7);
+     text-decoration: none;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     border-left: 3px solid transparent;
+ }
+
+ .sidebar-item:hover,
+ .sidebar-item.active {
+     background: rgba(170, 118, 255, 0.1);
+     color: #AA76FF;
+     border-left-color: #AA76FF;
+ }
+
+ .sidebar-icon1 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon2 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/home.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon3 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/animacion.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon4 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/comedy.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon5 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/drama.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon6 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/horror.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon7 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/Sci-fi.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon8 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/thriller.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon9 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/romance.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon10 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/fantasy.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+
+ .sidebar-icon12 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/documentary.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon13 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/crime.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon14 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/family.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon15 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/little_mystery.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon16 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/war.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon17 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/west.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon18 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/music.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon19 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/history.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon20 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/settings.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .sidebar-icon21 {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     background-image: url(../storage/img/logout.png);
+     border-radius: 4px;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.7rem;
+     background-size: cover;
+     background-position: center;
+ }
+
+
+ .sidebar-label {
+     white-space: nowrap;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+ }
+
+ .sidebar:hover .sidebar-label {
+     opacity: 1;
+ }
+
+ .sidebar-spacer {
+     flex: 1;
+ }
+
+ /* Main Content */
+ .main-content {
+     margin-left: 60px;
+     min-height: 100vh;
+     padding: 0;
+ }
+
+ /* Header */
+ .header {
+
+     padding-top: 16px;
+     top: 0;
+     position: absolute;
+     z-index: 100;
+ }
+
+ .header-content {
+     display: flex;
+ }
+
+ .search-section {
+     flex: 1;
+     max-width: 600px;
+     margin: 0 2rem;
+ }
+
+ .search-bar {
+     position: relative;
+ }
+
+ .search-input {
+     width: 100%;
+     background: rgba(170, 118, 255, 0.1);
+     border: 1px solid rgba(170, 118, 255, 0.3);
+     border-radius: 25px;
+     padding: 12px 20px;
+     color: white;
+     font-size: 0.95rem;
+ }
+
+ .search-input::placeholder {
+     color: rgba(255, 255, 255, 0.5);
+ }
+
+ .search-input:focus {
+     outline: none;
+     border-color: #AA76FF;
+     box-shadow: 0 0 0 0.2rem rgba(170, 118, 255, 0.25);
+ }
+
+ .nav-btn {
+     background: rgba(171, 118, 255, 0.719);
+     border: 0px solid rgba(170, 118, 255, 0.3);
+     color: #AA76FF;
+     padding: 8px 20px;
+     margin-top: 7px;
+     margin-left: 20px;
+     border-bottom-left-radius: 20px;
+     border-top-left-radius: 20px;
+     cursor: pointer;
+ }
+
+ .nav-btn2 {
+     background: rgba(255, 255, 255, 0.671);
+     border: 0px solid rgba(170, 118, 255, 0.3);
+     margin-left: -5px;
+     color: rgba(255, 255, 255, 0.925);
+     padding: 8px 20px;
+     border-bottom-right-radius: 20px;
+     border-top-right-radius: 20px;
+     transition: all 0.3s ease;
+     cursor: pointer;
+ }
+
+ .nav-btn.active,
+ .nav-btn:hover {
+     background: rgba(171, 118, 255, 0.479);
+     color: #AA76FF;
+     border-color: #AA76FF;
+ }
+
+ .nav-btn2:hover {
+     background: rgba(255, 255, 255, 0.473);
+     color: #ffffff;
+     border-color: #AA76FF;
+ }
+
+ /* Logo KarenFlix en esquina */
+ .karenflix-logo {
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     width: 180px;
+     height: 180px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #AA76FF;
+     z-index: 100;
+     background-image: url('../storage/img/karenflix_monogram.png');
+     background-size: cover;
+     background-position: center;
+ }
+
+ /* Hero Section */
+ .hero-section {
+     position: relative;
+     height: 70vh;
+     background: #0f0f23;
+     overflow: hidden;
+ }
+
+ .hero-background {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: #0f0f23;
+     z-index: 1;
+ }
+
+ .hero-image {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #0f0f23;
+     opacity: 0.1;
+ }
+
+ .degradado {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(#000000, #00000000, #000000);
+ }
+
+ .hero-content {
+     background-position-x: 50%;
+     position: relative;
+     z-index: 2;
+     height: 100%;
+     display: flex;
+     background-image: url(../storage/img/label.png);
+     background-repeat: no-repeat;
+     background-position: 50%;
+     background-size: cover;
+     align-items: flex-end;
+ }
+
+ .hero-info {
+     margin: 2rem;
+     z-index: 50;
+ }
+
+ .hero-title {
+     font-size: 3.5rem;
+     font-weight: 700;
+     margin-bottom: 1rem;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ .hero-meta {
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     margin-bottom: 1.5rem;
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.8);
+ }
+
+ .hero-rating {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+
+ .hero-stars {
+     color: #fbbf24;
+ }
+
+ /* Hero Maturity and Release Date Labels */
+ .hero-maturity-date {
+     display: flex;
+     gap: 0.75rem;
+     margin-bottom: 1rem;
+ }
+
+ .maturity-label {
+     background: rgba(171, 118, 255, 0.719);
+     border: 0px solid rgba(170, 118, 255, 0.3);
+     color: #000000;
+     padding: 6px 16px;
+     border-bottom-left-radius: 15px;
+     border-top-left-radius: 15px;
+     font-size: 0.85rem;
+     font-weight: 500;
+ }
+
+ .release-date-label {
+     background: rgba(255, 255, 255, 0.671);
+     border: 0px solid rgba(170, 118, 255, 0.3);
+     color: rgba(0, 0, 0, 0.925);
+     margin-left: -11px;
+     padding: 6px 16px;
+     border-bottom-right-radius: 15px;
+     border-top-right-radius: 15px;
+     font-size: 0.85rem;
+     font-weight: 500;
+ }
+
+
+ .hero-actions {
+     display: flex;
+     gap: 1rem;
+ }
+
+ .btn-play {
+     background: #ab76ff8f;
+     border: none;
+     width: 160px;
+     height: 60px;
+     padding: 12px 24px;
+     border-radius: 13.9px;
+     font-weight: 600;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     transition: all 0.3s ease;
+     cursor: pointer;
+ }
+
+ .btn-play-logo {
+     width: 80px;
+     height: 55px;
+     display: flex;
+     font-size: 0.6rem;
+     margin-left: 35px;
+     margin-right: 35px;
+     background-image: url('../storage/img/karenflix_monogram.png');
+     background-size: cover;
+     background-position: center;
+ }
+
+ .btn-info {
+     width: 60px;
+     height: 50px;
+     background-color: transparent;
+     border: 0px solid transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     margin-top: 5px;
+     margin-left: 5px;
+     margin-right: 35px;
+     background-image: url('../storage/img/more.png');
+     background-size: cover;
+     background-position: center;
+ }
+
+ .text {
+     text-decoration: none;
+     color: #FFFFFF;
+ }
+
+ .text2 {
+     text-decoration: none;
+     color: #AA76FF;
+ }
+
+ /* Content Sections */
+ .content-section {
+     padding: 2rem;
+ }
+
+ .section-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1.5rem;
+ }
+
+ .section-title {
+     font-size: 1.8rem;
+     font-weight: 600;
+     color: white;
+ }
+
+ /* Movie Grid */
+ .movies-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     gap: 1.5rem;
+ }
+
+ .movie-card {
+     border-radius: 12px;
+     overflow: hidden;
+     transition: all 0.3s ease;
+     cursor: pointer;
+ }
+
+ .movie-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 15px 40px rgba(170, 118, 255, 0.3);
+     border-color: #AA76FF;
+ }
+
+ .movie-poster {
+     width: 100%;
+     height: 280px;
+     border-bottom-left-radius: 12px;
+     border-bottom-right-radius: 12px;
+     background: linear-gradient(135deg, rgba(170, 118, 255, 0.2), rgba(147, 51, 234, 0.2));
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 0.8rem;
+     text-align: center;
+     position: relative;
+     background-image: url(https://image.tmdb.org/t/p/original/9050VGrYjYrEjpOvDZVAngLbg1f.jpg);
+     background-size: cover;
+     background-position: 50%;
+ }
+
+ /* Movie Year Label in corner */
+ .movie-year-label {
+     position: absolute;
+     top: 8px;
+     right: 8px;
+     background: rgba(255, 255, 255, 0.7);
+     backdrop-filter: blur(10px);
+     color: rgb(0, 0, 0);
+     padding: 4px 8px;
+     border-radius: 6px;
+     font-size: 0.75rem;
+     font-weight: 500;
+     z-index: 10;
+ }
+
+ .movie-info {
+     padding: 1.9rem;
+ }
+
+ .movie-title {
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 0.5rem;
+     text-align: center;
+     color: #AA76FF;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .sidebar {
+         transform: translateX(-100%);
+     }
+
+     .sidebar.open {
+         transform: translateX(0);
+         width: 250px;
+     }
+
+     .main-content {
+         margin-left: 0;
+     }
+
+     .header-content {
+         flex-direction: column;
+         gap: 1rem;
+     }
+
+     .search-section {
+         margin: 0;
+         max-width: none;
+     }
+
+     .hero-title {
+         font-size: 2.5rem;
+     }
+
+     .hero-meta {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 0.5rem;
+     }
+
+     .hero-actions {
+         flex-direction: column;
+     }
+
+     .karenflix-logo {
+         position: static;
+         width: 60px;
+         height: 60px;
+         margin-bottom: 1rem;
+     }
+
+     .movies-grid {
+         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+         gap: 1rem;
+     }
+
+     .movie-poster {
+         height: 220px;
+     }
+ }
+
+ /* Mobile Menu Button */
+ .mobile-menu-btn {
+     display: none;
+     background: rgba(170, 118, 255, 0.2);
+     border: 1px solid rgba(170, 118, 255, 0.3);
+     color: #AA76FF;
+     padding: 8px;
+     border-radius: 8px;
+     cursor: pointer;
+ }
+
+ @media (max-width: 768px) {
+     .mobile-menu-btn {
+         display: block;
+     }
+ }

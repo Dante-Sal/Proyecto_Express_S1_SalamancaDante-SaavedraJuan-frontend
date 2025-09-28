@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    const invisible_elements = document.querySelectorAll(':not(.visible)');
+    const loader = document.querySelector('.loader-background');
     const sidebar_logout = document.getElementById('sidebar-logout');
     const avatar_image = document.getElementById('avatar-image');
     const profile_username = document.getElementById('profile-username');
@@ -16,10 +18,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         avatar_image.style.backgroundImage = `url("${data.avatar_url}")`;
         profile_username.innerText = `@${data.username}`;
+        document.querySelector('body').style.overflowY = 'auto';
+
+        invisible_elements.forEach(element => {
+            element.style.visibility = 'initial';
+        });
+
+        loader.style.display = 'none';
     };
 
     sidebar_logout.addEventListener('click', async () => {
-        const logOutResponse = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/logout', { credentials: 'include' });
+        const logOutResponse = await fetch(`${API}/users/logout`, { credentials: 'include' });
         const logOutResult = await logOutResponse.json();
         if (logOutResult.redirect) window.location.href = window.location.origin + logOutResult.redirect;
     });

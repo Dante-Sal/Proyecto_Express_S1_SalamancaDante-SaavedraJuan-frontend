@@ -8,8 +8,23 @@
     <link rel="stylesheet" href="../style/style4.css">
     <script src="../scripts/connection_to_backend/main.js" defer></script>
     <title>KarenFlix - Dashboard</title>
-    <body>
-<!-- Sidebar -->
+</head>
+
+<body>
+    <div class="loader-background visible">
+        <div class="loader visible">
+            <div class="square visible" id="sq1"></div>
+            <div class="square visible" id="sq2"></div>
+            <div class="square visible" id="sq3"></div>
+            <div class="square visible" id="sq4"></div>
+            <div class="square visible" id="sq5"></div>
+            <div class="square visible" id="sq6"></div>
+            <div class="square visible" id="sq7"></div>
+            <div class="square visible" id="sq8"></div>
+            <div class="square visible" id="sq9"></div>
+        </div>
+    </div>
+    <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="sidebar-content">
             <!-- Usuario -->
@@ -23,84 +38,84 @@
                 <div class="sidebar-icon2" data-api-home-image></div>
                 <span class="sidebar-label">Home</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="action" data-api-label="Action">
                 <div class="sidebar-icon3" data-api-action-image></div>
                 <span class="sidebar-label">Animation</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="comedy" data-api-label="Comedy">
                 <div class="sidebar-icon4" data-api-comedy-image></div>
                 <span class="sidebar-label">Comedy</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="drama" data-api-label="Drama">
                 <div class="sidebar-icon5" data-api-drama-image></div>
                 <span class="sidebar-label">Drama</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="horror" data-api-label="Horror">
                 <div class="sidebar-icon6" data-api-horror-image></div>
                 <span class="sidebar-label">Horror</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="scifi" data-api-label="Sci-Fi">
                 <div class="sidebar-icon7" data-api-scifi-image></div>
                 <span class="sidebar-label">Science Fiction</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="thriller" data-api-label="Thriller">
                 <div class="sidebar-icon8" data-api-thriller-image></div>
                 <span class="sidebar-label">Thriller</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="romance" data-api-label="Romance">
                 <div class="sidebar-icon9" data-api-romance-image></div>
                 <span class="sidebar-label">Romance</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="fantasy" data-api-label="Fantasy">
                 <div class="sidebar-icon10" data-api-fantasy-image></div>
                 <span class="sidebar-label">Fantasy</span>
             </a>
-            
+
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="documentary" data-api-label="Documentary">
                 <div class="sidebar-icon12" data-api-documentary-image></div>
                 <span class="sidebar-label">Documentary</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="crime" data-api-label="Crime">
                 <div class="sidebar-icon13" data-api-crime-image></div>
                 <span class="sidebar-label">Crime</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="family" data-api-label="Family">
                 <div class="sidebar-icon14" data-api-family-image></div>
                 <span class="sidebar-label">Family</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="mystery" data-api-label="Mystery">
                 <div class="sidebar-icon15" data-api-mystery-image></div>
                 <span class="sidebar-label">Mystery</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="war" data-api-label="War">
                 <div class="sidebar-icon16" data-api-war-image></div>
                 <span class="sidebar-label">War</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="western" data-api-label="Western">
                 <div class="sidebar-icon17" data-api-western-image></div>
                 <span class="sidebar-label">Western</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="music" data-api-label="Music">
                 <div class="sidebar-icon18" data-api-music-image></div>
                 <span class="sidebar-label">Music</span>
             </a>
-            
+
             <a href="#" class="sidebar-item" data-api-icon="history" data-api-label="History">
                 <div class="sidebar-icon19" data-api-history-image></div>
                 <span class="sidebar-label">History</span>
@@ -132,10 +147,10 @@
                 </div>
                 <div class="section-nav">
                     <button class="nav-btn" data-api-filter="movies">
-                    <a class="text" href="../html/main.html">Movies</a>
+                        <a class="text" href="../html/main.html">Movies</a>
                     </button>
                     <button class="nav-btn2" data-api-filter="series">
-                    <a class="text2" href="../html/main_series.html">Series</a>
+                        <a class="text2" href="../html/main_series.html">Series</a>
                     </button>
                 </div>
                 <div class="search-section">
@@ -150,14 +165,14 @@
         <div class="hero-section">
             <div class="hero-image" data-api-hero-bg></div>
             <div class="hero-background"></div>
-            
+
             <div class="hero-content">
                 <div class="degradado"></div>
                 <div class="hero-info">
                     <h1 class="hero-title" data-api-hero-title>
                         The Fantastic 4: First Steps
                     </h1>
-                    
+
                     <div class="hero-meta">
                         <div class="hero-rating">
                             <span class="hero-stars" data-api-hero-stars>★</span>
@@ -166,15 +181,15 @@
                         <span data-api-hero-year>English</span>
                         <span data-api-hero-duration>120 min</span>
                     </div>
-                    
+
                     <!-- Maturity y Release Date -->
                     <div class="hero-maturity-date">
                         <span class="maturity-label" data-api-hero-maturity>Maturity: 18-</span>
                         <span class="release-date-label" data-api-hero-release-date>23/07/2025</span>
                     </div>
-                    
+
                     <span data-api-hero-genres>Science Fiction • Adventure</span>
-                    <br><br>             
+                    <br><br>
                     <div class="hero-actions">
                         <button class="btn-play" onclick="playContent()" data-api-hero-play>
                             <div class="btn-play-logo">
@@ -193,13 +208,13 @@
             <div class="section-header">
                 <h2 class="section-title" data-api-section-title>Movies</h2>
             </div>
-            
+
             <div class="movies-grid" id="moviesGrid" data-api-movies-container>
                 <!-- Movie cards will be populated from API -->
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -210,7 +225,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -220,7 +235,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -230,7 +245,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -240,7 +255,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -250,7 +265,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -260,7 +275,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -270,7 +285,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -280,7 +295,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -290,7 +305,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -300,7 +315,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -310,7 +325,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -320,7 +335,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -330,7 +345,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -340,7 +355,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -350,7 +365,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -360,7 +375,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -370,7 +385,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -380,7 +395,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -390,7 +405,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -400,7 +415,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -410,7 +425,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -420,7 +435,7 @@
                 <div class="movie-card" data-api-movie-item>
                     <div class="movie-poster" data-api-movie-poster>
                         <div class="movie-year-label" data-api-movie-year>1999</div>
-                        
+
                     </div>
                     <div class="movie-info">
                         <div class="movie-title" data-api-movie-title>The Blair Witch Proyect </div>
@@ -432,7 +447,8 @@
         </div>
     </div>
 
-    </body>
+</body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </html>
