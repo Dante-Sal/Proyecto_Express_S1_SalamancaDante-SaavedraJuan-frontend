@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             genresListResult.documents.forEach(genre => {
                 sidebar_content_genres.innerHTML += `
-                    <a class="sidebar-item" genre-id="${genre.code}">
-                        <div class="sidebar-icon sidebar-icon${genre.code}"></div>
-                        <span class="sidebar-label">${genre.name}</span>
+                    <a class="sidebar-item visible" genre-id="${genre.code}">
+                        <div class="sidebar-icon sidebar-icon${genre.code} visible"></div>
+                        <span class="sidebar-label visible">${genre.name}</span>
                     </a>
                 `;
 
