@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             genresListResult.documents.forEach(genre => {
                 sidebar_content_genres.innerHTML += `
-                    <a class="sidebar-item" data-api-icon="${genre.name.toLowerCase()}" data-api-label="${genre.name}" genre-id="${genre.code}">
-                        <div class="sidebar-icon sidebar-${genre.name.toLowerCase()}-icon" data-api-action-image></div>
+                    <a class="sidebar-item" genre-id="${genre.code}">
+                        <div class="sidebar-icon sidebar-icon${genre.code}"></div>
                         <span class="sidebar-label">${genre.name}</span>
                     </a>
                 `;
 
-                const genreIconContainer = document.querySelector(`.sidebar-${genre.name.toLowerCase()}-icon`);
+                const genreIconContainer = document.querySelector(`.sidebar-icon${genre.code}`);
                 genreIconContainer.style.backgroundImage = `url("${genre.icon}")`;
             });
         };
