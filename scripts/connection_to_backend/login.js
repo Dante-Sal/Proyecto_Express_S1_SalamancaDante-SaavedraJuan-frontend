@@ -38,30 +38,36 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     waitBtn();
 
-    const body = {};
+    try {
+        const body = {};
 
-    const email = e.target.children[2].children.username.value;
-    const password = e.target.children[3].children.password.value;
+        const email = e.target.children[2].children.username.value;
+        const password = e.target.children[3].children.password.value;
 
-    if (email.trim() !== '') body.email = email;
-    if (password.trim() !== '') body.password = password;
+        if (email.trim() !== '') body.email = email;
+        if (password.trim() !== '') body.password = password;
 
-    const response = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
-        credentials: 'include'
-    });
+        const response = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+            credentials: 'include'
+        });
 
-    const result = await response.json();
+        const result = await response.json();
 
-    if (!result.ok) { showError(result.error); return unwaitBtn(); };
+        if (!result.ok) { showError(result.error); return; };
 
-    if (result.redirect) {
-        showSuccess(result.message);
+        if (result.redirect) {
+            showSuccess(result.message);
 
-        setTimeout(() => {
-            window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + result.redirect.user;
-        }, 3000);
+            setTimeout(() => {
+                window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + result.redirect.user;
+            }, 3000);
+        };
+    } catch (err) {
+        showError(err?.message ?? 'Network error');
+    } finally {
+        unwaitBtn();
     };
 });
