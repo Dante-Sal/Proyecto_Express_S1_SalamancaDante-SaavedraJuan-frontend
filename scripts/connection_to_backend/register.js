@@ -1,6 +1,8 @@
 const errorMessage = document.getElementById('errorMessage');
 const successMessage = document.getElementById('successMessage');
 const registerBtn = document.getElementById('registerBtn');
+const API = 'https://proyecto-express-s1-salamancadante.onrender.com';
+const ROOT = '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend';
 
 function showError(message) {
     errorMessage.textContent = message;
@@ -59,7 +61,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
     body.role = e.target.children[5].children[1].children.role.value;
     if (avatarUrl.trim() !== '') body.avatar_url = avatarUrl;
 
-    const response = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/register', {
+    const response = await fetch(`${API}/users/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
@@ -74,7 +76,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         showSuccess(result.message);
 
         setTimeout(() => {
-            window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + result.redirect;
+            window.location.href = window.location.origin + ROOT + result.redirect;
         }, 3000);
     };
 });

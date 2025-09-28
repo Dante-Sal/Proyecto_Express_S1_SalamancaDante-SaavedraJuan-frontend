@@ -1,6 +1,8 @@
 const errorMessage = document.getElementById('errorMessage');
 const successMessage = document.getElementById('successMessage');
 const signinBtn = document.getElementById('signinBtn');
+const API = 'https://proyecto-express-s1-salamancadante.onrender.com';
+const ROOT = '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend';
 
 function showError(message) {
     errorMessage.textContent = message;
@@ -47,7 +49,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         if (email.trim() !== '') body.email = email;
         if (password.trim() !== '') body.password = password;
 
-        const response = await fetch('https://proyecto-express-s1-salamancadante.onrender.com/users/login', {
+        const response = await fetch(`${API}/users/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),
@@ -62,7 +64,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             showSuccess(result.message);
 
             setTimeout(() => {
-                window.location.href = window.location.origin + '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend' + result.redirect.user;
+                window.location.href = window.location.origin + ROOT + result.redirect.user;
             }, 3000);
         };
     } catch (err) {
