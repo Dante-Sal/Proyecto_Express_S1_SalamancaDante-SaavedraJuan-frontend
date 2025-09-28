@@ -160,34 +160,16 @@
      background-position: center;
  }
 
+ .sidebar-icon2 {
+     background-image: url(../storage/img/home.png);
+ }
+
  .sidebar-icon20 {
-     width: 24px;
-     height: 24px;
-     min-width: 24px;
      background-image: url(../storage/img/settings.png);
-     border-radius: 4px;
-     margin-right: 1rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 0.7rem;
-     background-size: cover;
-     background-position: center;
  }
 
  .sidebar-icon21 {
-     width: 24px;
-     height: 24px;
-     min-width: 24px;
      background-image: url(../storage/img/logout.png);
-     border-radius: 4px;
-     margin-right: 1rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 0.7rem;
-     background-size: cover;
-     background-position: center;
  }
 
 

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         loader.style.display = 'none';
 
-        const genresListResponse = await fetch(`${API}/genres/list`);
+        const genresListResponse = await fetch(`${API}/genres`);
 
         if (genresListResponse.ok) {
             const genresListResult = await genresListResponse.json();

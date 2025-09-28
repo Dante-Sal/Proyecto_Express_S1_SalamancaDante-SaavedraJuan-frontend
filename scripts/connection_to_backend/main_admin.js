@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sidebar_logout = document.getElementById('sidebar-logout');
     const avatar_image = document.getElementById('avatar-image');
     const profile_username = document.getElementById('profile-username');
+    const sidebar_content_genres = document.querySelector('.sidebar-content-genres');
+    
     const API = 'https://proyecto-express-s1-salamancadante.onrender.com';
     const ROOT = '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend';
 
@@ -25,6 +27,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         loader.style.display = 'none';
+
+        const genresListResponse = await fetch(`${API}/genres`);
+
+        if (genresListResponse.ok) {
+            const genresListResult = await genresListResponse.json();
+
+            genresListResult.documents.forEach(genre => {
+                sidebar_content_genres.innerHTML += `
+                    <a class="sidebar-item" data-api-icon="${genre.name.toLowerCase()}" data-api-label="${genre.name}" genre-id="${genre.code}">
+                        <div class="sidebar-icon sidebar-${genre.name.toLowerCase()}-icon" data-api-action-image></div>
+                        <span class="sidebar-label">${genre.name}</span>
+                    </a>
+                `;
+
+                const genreIconContainer = document.querySelector(`.sidebar-${genre.name.toLowerCase()}-icon`);
+                genreIconContainer.style.backgroundImage = `url("${genre.icon}")`;
+            });
+        };
     };
 
     sidebar_logout.addEventListener('click', async () => {
