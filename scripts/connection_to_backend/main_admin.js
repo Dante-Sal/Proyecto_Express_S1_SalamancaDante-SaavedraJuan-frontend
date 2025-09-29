@@ -64,11 +64,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
             const catalogHeroReleaseDate = new Date(catalogHeroTitle.release_date);
-            console.log(catalogHeroReleaseDate);
 
             hero_image.style.backgroundImage = `url(${`${catalogHeroTitle.backdrop_url}` ?? '../../storage/img/default-image.png'})`;
             hero_title.innerText = catalogHeroTitle.title;
-            hero_avg_score.innerText = catalogHeroTitle.avg_score;
+            hero_avg_score.innerText = catalogHeroTitle.avg_score['$numberDecimal'];
             hero_language.innerText = catalogHeroTitle.original_language.toUpperCase();
             hero_duration.innerText = catalogHeroTitle.runtime + ' min';
             maturity_label.innerText += catalogHeroTitle.adult;

@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const catalogFilterResponse = await fetch(`${API}/catalog?type=movie&ordering=ranking`);
 
         if (catalogFilterResponse.ok) {
-            const catalogFilterResult = await catalogFilterResponse.json();
+const catalogFilterResult = await catalogFilterResponse.json();
             const catalogHeroTitle = catalogFilterResult.documents[0];
             const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             hero_image.style.backgroundImage = `url(${`${catalogHeroTitle.backdrop_url}` ?? '../../storage/img/default-image.png'})`;
             hero_title.innerText = catalogHeroTitle.title;
-            hero_avg_score.innerText = catalogHeroTitle.avg_score;
+            hero_avg_score.innerText = catalogHeroTitle.avg_score['$numberDecimal'];
             hero_language.innerText = catalogHeroTitle.original_language.toUpperCase();
             hero_duration.innerText = catalogHeroTitle.runtime + ' min';
             maturity_label.innerText += catalogHeroTitle.adult;
