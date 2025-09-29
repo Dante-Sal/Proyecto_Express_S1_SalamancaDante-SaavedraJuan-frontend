@@ -200,7 +200,7 @@ Aqui se encuentra todo el Codigo detras del funcionamiento para el Frontend junt
 
 ## Video_Exposicion
 
-
+[https://drive.google.com/drive/folders/1z8iBOCJA8YhqfB24m8hFtC1IQ2rJhpwY?usp=sharing](https://drive.google.com/drive/folders/1z8iBOCJA8YhqfB24m8hFtC1IQ2rJhpwY?usp=sharing)
 
 # Desarrollado Por
 
