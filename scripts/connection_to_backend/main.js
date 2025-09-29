@@ -7,6 +7,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sidebar_content_genres = document.querySelector('.sidebar-content-genres');
     const movies_grid = document.querySelector('.movies-grid');
 
+    const hero_image = document.querySelector('.hero-content');
+    const hero_title = document.querySelector('.hero-title');
+    const hero_avg_score = document.querySelector('.hero-avg-score');
+    const hero_language = document.querySelector('.hero-language');
+    const hero_duration = document.querySelector('.hero-duration');
+    const maturity_label = document.querySelector('.maturity-label');
+    const release_date_label = document.querySelector('.release-date-label');
+    const hero_genres = document.querySelector('.hero-genres');
+
     const API = 'https://proyecto-express-s1-salamancadante.onrender.com';
     const ROOT = '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend';
 
@@ -51,8 +60,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (catalogFilterResponse.ok) {
             const catalogFilterResult = await catalogFilterResponse.json();
+            const catalogHeroTitle = catalogFilterResult.documents[0];
+            const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
-            catalogFilterResult.documents.forEach(title => {
+            hero_image.style.backgroundImage = `url(${`${catalogHeroTitle.backdrop_url}` ?? '../../storage/img/default-image.png'})`;
+            hero_title.innerText = catalogHeroTitle.title;
+            hero_avg_score.innerText = catalogHeroTitle.avg_score;
+            hero_language.innerText = catalogHeroTitle.original_language.toUpperCase();
+            hero_duration.innerText = catalogHeroTitle.runtime + ' min';
+            maturity_label.innerText += catalogHeroTitle.adult;
+            release_date_label.innerText = catalogHeroTitle.release_date.toLocaleDateString('es-ES');
+            hero_genres.innerText = catalogHeroTitle.genres.join(' • ');
+
+            catalogFilterBillboardTitles.forEach(title => {
                 const release_date = new Date(title.release_date);
                 const release_year = release_date.getFullYear();
 
@@ -68,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 `;
 
                 const moviePosterContainer = document.querySelector(`.movie-poster${title.code}`);
-                moviePosterContainer.style.backgroundImage = `url("${title.poster_url}")`;
+                moviePosterContainer.style.backgroundImage = `url(${`${title.poster_url}` ?? '../../storage/img/default-image.png'})`;
             });
         };
     };
