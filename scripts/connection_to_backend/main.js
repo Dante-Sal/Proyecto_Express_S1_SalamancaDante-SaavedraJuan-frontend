@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const catalogHeroTitle = catalogFilterResult.documents[0];
             const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
-            const catalogHeroPosterUrl = catalogHeroTitle.poster_url ?? '/storage/img/default-image.png';
+            const catalogHeroPosterUrl = catalogHeroTitle.backdrop_url ?? '/storage/img/default-image.png';
             const catalogHeroReleaseDate = new Date(catalogHeroTitle.release_date);
 
             hero_image.style.backgroundImage = `url(${catalogHeroPosterUrl})`;
