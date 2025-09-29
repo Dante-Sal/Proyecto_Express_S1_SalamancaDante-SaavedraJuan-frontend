@@ -59,13 +59,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         const catalogFilterResponse = await fetch(`${API}/catalog?type=movie&ordering=ranking`);
 
         if (catalogFilterResponse.ok) {
-const catalogFilterResult = await catalogFilterResponse.json();
+            const catalogFilterResult = await catalogFilterResponse.json();
             const catalogHeroTitle = catalogFilterResult.documents[0];
             const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
+            const catalogHeroPosterUrl = catalogHeroTitle.poster_url ?? '/storage/img/default-image.png';
             const catalogHeroReleaseDate = new Date(catalogHeroTitle.release_date);
 
-            hero_image.style.backgroundImage = `url(${`${catalogHeroTitle.backdrop_url}` ?? '../../storage/img/default-image.png'})`;
+            hero_image.style.backgroundImage = `url(${catalogHeroPosterUrl})`;
             hero_title.innerText = catalogHeroTitle.title;
             hero_avg_score.innerText = catalogHeroTitle.avg_score['$numberDecimal'];
             hero_language.innerText = catalogHeroTitle.original_language.toUpperCase();
@@ -75,13 +76,15 @@ const catalogFilterResult = await catalogFilterResponse.json();
             hero_genres.innerText = catalogHeroTitle.genres.join(' • ');
 
             catalogFilterBillboardTitles.forEach(title => {
-                const release_date = new Date(title.release_date);
-                const release_year = release_date.getFullYear();
+                const posterUrl = title.poster_url ?? '/storage/img/default-image.png';
+
+                const releaseDate = new Date(title.release_date);
+                const releaseYear = releaseDate.getFullYear();
 
                 movies_grid.innerHTML += `
                     <div class="movie-card" style="visibility: initial;">
                         <div class="movie-poster movie-poster${title.code}" style="visibility: initial;">
-                            <div class="movie-year-label" style="visibility: initial;">${release_year}</div>
+                            <div class="movie-year-label" style="visibility: initial;">${releaseYear}</div>
                         </div>
                         <div class="movie-info" style="visibility: initial;">
                             <div class="movie-title" style="visibility: initial;">${title.title}</div>
@@ -90,7 +93,7 @@ const catalogFilterResult = await catalogFilterResponse.json();
                 `;
 
                 const moviePosterContainer = document.querySelector(`.movie-poster${title.code}`);
-                moviePosterContainer.style.backgroundImage = `url(${`${title.poster_url}` ?? '../../storage/img/default-image.png'})`;
+                moviePosterContainer.style.backgroundImage = `url(${posterUrl})`;
             });
         };
     };
