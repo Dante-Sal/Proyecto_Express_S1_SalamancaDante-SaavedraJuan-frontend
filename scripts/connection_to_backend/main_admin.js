@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
             const catalogHeroReleaseDate = new Date(catalogHeroTitle.release_date);
+            console.log(catalogHeroReleaseDate);
 
             hero_image.style.backgroundImage = `url(${`${catalogHeroTitle.backdrop_url}` ?? '../../storage/img/default-image.png'})`;
             hero_title.innerText = catalogHeroTitle.title;
