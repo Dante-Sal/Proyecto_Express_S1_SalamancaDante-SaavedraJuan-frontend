@@ -63,13 +63,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             const catalogHeroTitle = catalogFilterResult.documents[0];
             const catalogFilterBillboardTitles = catalogFilterResult.documents.slice(1);
 
+            const catalogHeroReleaseDate = new Date(catalogHeroTitle.release_date);
+
             hero_image.style.backgroundImage = `url(${`${catalogHeroTitle.backdrop_url}` ?? '../../storage/img/default-image.png'})`;
             hero_title.innerText = catalogHeroTitle.title;
             hero_avg_score.innerText = catalogHeroTitle.avg_score;
             hero_language.innerText = catalogHeroTitle.original_language.toUpperCase();
             hero_duration.innerText = catalogHeroTitle.runtime + ' min';
             maturity_label.innerText += catalogHeroTitle.adult;
-            release_date_label.innerText = catalogHeroTitle.release_date.toLocaleDateString('es-ES');
+            release_date_label.innerText = catalogHeroReleaseDate.toLocaleDateString('es-ES');
             hero_genres.innerText = catalogHeroTitle.genres.join(' • ');
 
             catalogFilterBillboardTitles.forEach(title => {
