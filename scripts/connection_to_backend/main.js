@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const avatar_image = document.getElementById('avatar-image');
     const profile_username = document.getElementById('profile-username');
     const sidebar_content_genres = document.querySelector('.sidebar-content-genres');
+    const movies_grid = document.querySelector('.movies-grid');
 
     const API = 'https://proyecto-express-s1-salamancadante.onrender.com';
     const ROOT = '/Proyecto_Express_S1_SalamancaDante-SaavedraJuan-frontend';
@@ -35,14 +36,36 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             genresListResult.documents.forEach(genre => {
                 sidebar_content_genres.innerHTML += `
-                    <a class="sidebar-item" genre-id="${genre.code}">
-                        <div class="sidebar-icon sidebar-icon${genre.code}"></div>
-                        <span class="sidebar-label">${genre.name}</span>
+                    <a class="sidebar-item" style="visibility: initial;" genre-id="${genre.code}">
+                        <div class="sidebar-icon sidebar-icon${genre.code}" style="visibility: initial;"></div>
+                        <span class="sidebar-label" style="visibility: initial;">${genre.name}</span>
                     </a>
                 `;
 
                 const genreIconContainer = document.querySelector(`.sidebar-icon${genre.code}`);
                 genreIconContainer.style.backgroundImage = `url("${genre.icon}")`;
+            });
+        };
+
+        const catalogFilterResponse = await fetch(`${API}/catalog?type=movie&ordering=ranking`);
+
+        if (catalogFilterResponse.ok) {
+            const catalogFilterResult = await catalogFilterResponse.json();
+
+            catalogFilterResult.documents.forEach(title => {
+                movies_grid.innerHTML += `
+                    <div class="movie-card" style="visibility: initial;">
+                        <div class="movie-poster movie-poster${title.code}" style="visibility: initial;">
+                            <div class="movie-year-label" style="visibility: initial;">${title.release_date.getFullYear()}</div>
+                        </div>
+                        <div class="movie-info" style="visibility: initial;">
+                            <div class="movie-title" style="visibility: initial;">${title.title}</div>
+                        </div>
+                    </div>
+                `;
+
+                const moviePosterContainer = document.querySelector(`.movie-poster${title.code}`);
+                moviePosterContainer.style.backgroundImage = `url("${title.poster_url}")`;
             });
         };
     };
