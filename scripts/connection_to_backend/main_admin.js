@@ -53,10 +53,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             const catalogFilterResult = await catalogFilterResponse.json();
 
             catalogFilterResult.documents.forEach(title => {
+                const release_date = new Date(title.release_date);
+                const release_year = release_date.getFullYear();
+
                 movies_grid.innerHTML += `
                     <div class="movie-card" style="visibility: initial;">
                         <div class="movie-poster movie-poster${title.code}" style="visibility: initial;">
-                            <div class="movie-year-label" style="visibility: initial;">${title.release_date.getFullYear()}</div>
+                            <div class="movie-year-label" style="visibility: initial;">${release_year}</div>
                         </div>
                         <div class="movie-info" style="visibility: initial;">
                             <div class="movie-title" style="visibility: initial;">${title.title}</div>
